@@ -1,0 +1,56 @@
+#root-config-landing-img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.color-dark-blue-1 {
+  background-color: #3b708f !important;
+}
+
+.color-dark-blue-2 {
+  background-color: #3f85c6 !important;
+}
+
+.color-blue {
+  background-color: #359dd7 !important;
+}
+
+.color-bright-blue {
+  background-color: #39b3e4 !important;
+}
+
+.color-light-blue {
+  background-color: #82ccf1 !important;
+}
+
+.color-dark-gray {
+  background-color: #3a3a3a !important;
+}
+
+.color-gray {
+  background-color: #666766 !important;
+}
+
+.color-light-gray-1 {
+  background-color: #9b9a9a !important;
+}
+
+.color-light-gray-2 {
+  background-color: #e8e8e8 !important;
+}
+
+.btn.btn-primary {
+  color: #ffffff !important;
+  background-color: #359dd7 !important;
+  border-color: #359dd7 !important;
+}
+
+.text-dark-gray {
+  color: #3a3a3a;
+}
+
+.text-blue {
+  color: #359DD7;
+}

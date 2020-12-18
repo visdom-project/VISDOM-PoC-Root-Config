@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
+    "react-redux": "https://cdnjs.cloudflare.com/ajax/libs/react-redux/7.2.1/react-redux.js",
+    "react-router-dom": "https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.2.0/react-router-dom.min.js",
+    "react-bootstrap": "https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.3.0/react-bootstrap.js",
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.3/lib/system/single-spa.min.js",
+    "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.5.5/system/rxjs.min.js",
+    "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.5.5/system/rxjs-operators.min.js",
+    "@visdom-poc/root-config": "https://localhost:8500/visdom-poc-root-config.js",
+    "@visdom-poc/composer": "//localhost:9001/visdom-poc-composer.js"
+  }
+}
