@@ -8,13 +8,32 @@ const CopyPlugin = require("copy-webpack-plugin");
  * the application in a subdirectory, such as www.server.com/composer.
  *
  * @param {*} env - Environment configuration.
- * @return {string} - Basename used to host the application. 
+ * @return {string} - Basename used to host the application.
  */
 function baseName(env) {
   if (env && env.baseName) {
     return env.baseName;
   }
   return "";
+}
+
+/**
+ * Insert basename before local imports.
+ *
+ * @param {*} buffer JSON string buffer.
+ * @param {*} env Webpack env variable collection.
+ * @return {*} The modified string buffer.
+ */
+function modifyImportMap(buffer, env) {
+  var importMapContents = JSON.parse(buffer.toString());
+  if (env && env.baseName) {
+    Object.keys(importMapContents.imports).forEach((k) => {
+      if (importMapContents.imports[k].startsWith('/')) {
+        importMapContents.imports[k] = env.baseName + importMapContents.imports[k];
+      }
+    })
+  }
+  return JSON.stringify(importMapContents);
 }
 
 module.exports = (env) => {
@@ -57,7 +76,13 @@ module.exports = (env) => {
     plugins: [
       new CopyPlugin({
         patterns: [
-          { from: "src/importmap.json", to: "./" },
+          {
+            from: "src/importmap.json",
+            to: "./",
+            transform(content, path) {
+              return modifyImportMap(content, env);
+            },
+          },
           { from: "public", to: "public" },
         ],
       }),

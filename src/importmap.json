@@ -8,7 +8,7 @@
     "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.3/lib/system/single-spa.min.js",
     "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.5.5/system/rxjs.min.js",
     "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.5.5/system/rxjs-operators.min.js",
-    "@visdom-poc/root-config": "https://localhost:8500/visdom-poc-root-config.js",
-    "@visdom-poc/composer": "//localhost:9001/visdom-poc-composer.js"
+    "@visdom-poc/root-config": "/visdom-poc-root-config.js",
+    "@visdom-poc/composer": "/visdom-poc-composer.js"
   }
 }
