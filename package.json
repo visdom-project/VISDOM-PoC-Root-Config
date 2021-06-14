@@ -4,7 +4,7 @@
     "lint": "eslint src",
     "test": "jest --passWithNotests",
     "format": "prettier --write './**'",
-    "build": "webpack --mode=production --env.baseName=/dashboard"
+    "build": "webpack --mode=production --env.baseName=${BASENAME}"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
